@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.kalkafox.logoequality.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "LogoRendererMixin"
+  ],
+  "injectors": {
+    "maxShiftBy": 5,
+    "defaultRequire": 1
+  }
+}

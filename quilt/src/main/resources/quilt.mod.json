@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "${mod_id}-common.mixins.json",
+    "${mod_id}.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "logoequality",
+    "version": "${version}",
+    "metadata": {
+      "name": "${mod_name}",
+      "description": "${mod_description}",
+      "contributors": {
+        "Kalka": "Owner"
+      },
+      "contact": {
+        "sources": "https://github.com/kalkafox/logoequality"
+      },
+      "icon": "assets/logoequality/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "init": [
+        "dev.kalkafox.logoequality.quilt.LogoEqualityQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=${minecraft_version}"
+      }
+    ]
+  },
+  "minecraft": {
+    "environment": "client"
+  }
+}
